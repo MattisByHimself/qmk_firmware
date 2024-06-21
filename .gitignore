@@ -113,6 +113,7 @@ user_song_list.h
 !/keyboards/ergodox_ez
 !/keyboards/voyager
 /keyboards/**/keymaps/*
+!/keyboards/voyager/keymaps/mattis
 # clangd
 compile_commands.json
 .clangd/
@@ -120,3 +121,8 @@ compile_commands.json
 
 # VIA(L) json files that don't belong in QMK repo
 via*.json
+
+# OS Specific
+.DS_Store
+.DS_Store?
+**/.DS_Store
