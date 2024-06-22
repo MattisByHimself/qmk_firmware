@@ -274,9 +274,18 @@ __attribute__((weak)) bool achordion_chord(uint16_t tap_hold_keycode,
   return achordion_opposite_hands(tap_hold_record, other_record);
 }
 
-// By default, the timeout is 1000 ms for all keys.
+// By default, the timeout is 800 ms for all keys.
 __attribute__((weak)) uint16_t achordion_timeout(uint16_t tap_hold_keycode) {
-  return 1000;
+  switch (tap_hold_keycode){
+    // set lower timeout for all cases
+    case LT(1,KC_SPACE): // Space + Layer 1 Key
+    case LT(2,KC_ENTER): // Enter + Layer 2 Key
+    case MT(MOD_LALT, KC_BSPC): // Backspace + Alt/Option Keys
+      return 200;
+  }
+
+  // default Timeout for all keys
+  return 800;
 }
 
 // By default, Shift and Ctrl mods are eager, and Alt and GUI are not.
