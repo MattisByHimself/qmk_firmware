@@ -114,6 +114,7 @@ user_song_list.h
 !/keyboards/voyager
 /keyboards/**/keymaps/*
 !/keyboards/voyager/keymaps/mattis
+!/keyboards/voyager/keymaps/mattis2
 # clangd
 compile_commands.json
 .clangd/
