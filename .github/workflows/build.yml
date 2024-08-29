@@ -1,11 +1,5 @@
 name: Build firmware
 on:
-  push:
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - '**.md'
   workflow_dispatch:
 
 
@@ -17,17 +11,9 @@ jobs:
       fail-fast: false
       matrix:
         keyboard:
-          - ergodox_ez
-          - ergodox_ez/shine
-          - ergodox_ez/glow
-          - moonlander
-          - planck/ez
-          - planck/ez/glow
           - voyager
-          - voyager/gd32
         keymap:
-          - default
-          - oryx
+          - mattis
 
     steps:
     - name: Checkout QMK Firmware
