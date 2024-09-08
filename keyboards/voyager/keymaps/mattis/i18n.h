@@ -6,7 +6,6 @@
 #define DE_AE KC_QUOT
 #define DE_MINS KC_SLSH
 #define DE_CIRC KC_GRV
-#define DE_ACUT KC_EQL
 #define DE_LBRC ALGR(KC_8)
 #define DE_RBRC ALGR(KC_9)
 #define DE_DQOT S(KC_2)
@@ -26,3 +25,4 @@
 #define DE_RPRN S(KC_9)
 #define DE_EQL S(KC_0)
 #define DE_QST S(KC_MINS)
+#define DE_ACUT KC_EQL
