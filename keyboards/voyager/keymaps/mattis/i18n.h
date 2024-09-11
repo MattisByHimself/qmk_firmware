@@ -26,3 +26,4 @@
 #define DE_EQL S(KC_0)
 #define DE_QST S(KC_MINS)
 #define DE_ACUT KC_EQL
+#define DE_TILD ALGR(KC_RBRC)
