@@ -19,6 +19,7 @@ jobs:
         keymap:
           - default
           - oryx
+          - voyager:mattis_qwerty_hrm
 
     steps:
     - name: Checkout QMK Firmware
